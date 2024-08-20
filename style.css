@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: rgb(226, 218, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    background-color: rgb(245, 237, 237);
+    width: 30%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
+}
+
+h2{
+    margin-top: 20px;
+    color: rgb(100, 130, 173);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+form{
+    margin: 30px;
+    
+}
+
+form p{
+    margin: 5px 0 5px 0;
+    padding-left: 3px;
+    font-size: 1.2rem;
+    color: rgb(100, 130, 173);
+}
+
+form input, select ,button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+form input{
+    border: 2px solid rgb(226, 218, 214);
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 10px;
+
+}
+
+select{
+    border: 1px solid white;
+    font-size: 1rem;
+    height: 2rem;
+    padding-left: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.dropdown i{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgb(127, 161, 195);
+    color: white;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 20px gray;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.select-container img{
+    width: 2rem;
+}
+
+.select-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(226, 218, 214);
+    padding: 5px;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container{
+        width: 70%;
+    }   
+    form{
+        margin: 10px;
+    }
+    .dropdown i{
+        font-size: 1rem;
+    }
+    .select-container{
+        width: 90%;
+    }
+}
